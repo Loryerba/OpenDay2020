@@ -1,1 +1,4 @@
+<<<<<<< HEAD
 prova1
+=======
+>>>>>>> parent of b51b96b... Merge pull request #10 from Loryerba/HomePage
