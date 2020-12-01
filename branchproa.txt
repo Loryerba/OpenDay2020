@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 prova1
+=======
+prova1
+>>>>>>> parent of 241b5c6... Merge branch 'master' into Wiki
