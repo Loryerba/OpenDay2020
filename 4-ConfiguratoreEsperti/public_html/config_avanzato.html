@@ -208,7 +208,7 @@
 
                     <h3> Dissipatore </h3>
                     <select name="slct" id="slct-cooler">
-                        <option selected disabled>Selezionare una scheda video: </option>
+                        <option selected disabled>Selezionare un dissipatore </option>
                         <option value="1"> Cooler Master Hyper 212 EVO Dissipatore Aria : 33€</option>
                         <option value="2"> Noctua NH-U9B SE2 Dissipatore Aria : 100€</option>
                         <option value="3"> ARCTIC Freezer 34 eSports DUO Dissipatore Aria : 44€</option>
@@ -224,9 +224,9 @@
 
                     <div class="btn-box">
                         <!-- Bottone per proseguire alla pagina successiva della form-->
-                        <button type="button" id="Back2" onclick="Back2();"> Indietro </button>
+                        <button type="button" id="Back2" onclick="BackSecond();"> Indietro </button>
                         <!-- Bottone per proseguire alla pagina precedente della form-->
-                        <button type="button" id="Next3"> Avanti </button>
+                        <button type="button" id="Next3" onclick ="evaluateThird();"> Avanti </button>
                     </div>
 
                 </form>
@@ -256,9 +256,9 @@
 
                     <div class="btn-box">
                         <!-- Bottone per proseguire alla pagina successiva della form-->
-                        <button type="button" id="Back3"> Indietro </button>
+                        <button type="button" id="Back3" onclick="BackThird();"> Indietro </button>
                         <!-- Bottone per proseguire alla pagina precedente della form-->
-                        <button type="button" id="Next4"> Avanti </button>
+                        <button type="button" id="Next4" onclick="evaluateFourth();"> Avanti </button>
                     </div>
 
                 </form>
@@ -292,9 +292,9 @@
 
                     <div class="btn-box">
                         <!-- Bottone per proseguire alla pagina successiva della form-->
-                        <button type="button" id="Back4"> Indietro </button>
+                        <button type="button" id="Back4" onclick="BackFourth();"> Indietro </button>
                         <!-- Bottone per proseguire alla pagina precedente della form-->
-                        <button type="button" id="Next5"> Avanti </button>
+                        <button type="button" id="Next5" onclick="evaluateFifth();"> Avanti </button>
                     </div>
 
                 </form>
@@ -303,7 +303,7 @@
 
                     <h3> Hard Disk</h3>
                     <select name="slct" id="slct-hdd">
-                        <option selected disabled>Selezionare una scelta</option>
+                        <option selected disabled>Selezionare un Hard Disk: </option>
                         <option value="1">Seagate BarraCuda Pro 500 GB : 41€</option>
                         <option value="2">Seagate BarraCuda Pro 1 TB: 72€</option>
                         <option value="3">Seagate BarraCuda 2 TB : 58€ </option>
@@ -315,9 +315,9 @@
 
                     <div class="btn-box">
                         <!-- Bottone per proseguire alla pagina successiva della form-->
-                        <button type="button" id="Back5"> Indietro </button>
+                        <button type="button" id="Back5" onclick = "BackFifth();"> Indietro </button>
                         <!-- Bottone per proseguire alla pagina precedente della form-->
-                        <button type="button" id="Next6"> Avanti </button>
+                        <button type="button" id="Next6" onclick="evaluateSixth();"> Avanti </button>
                     </div>
 
                 </form>
@@ -326,7 +326,7 @@
 
                     <h3> Solid State Drive (SSD) </h3>
                     <select name="slct" id="slct-ssd">
-                        <option selected disabled>Selezionare una scelta</option>
+                        <option selected disabled>Selezionare un SSD: </option>
                         <option value="1"> Samsung SSD Sata 860 EVO 250 GB : 39€</option>
                         <option value="2"> Samsung SSD Sata 860 EVO 500 GB : 64€ </option>
                         <option value="3"> Samsung SSD Sata 860 EVO 1TB : 107€</option>
@@ -339,9 +339,9 @@
 
                     <div class="btn-box">
                         <!-- Bottone per proseguire alla pagina successiva della form-->
-                        <button type="button" id="Back6"> Indietro </button>
+                        <button type="button" id="Back6" onclick="BackSixth();"> Indietro </button>
                         <!-- Bottone per proseguire alla pagina precedente della form-->
-                        <button type="button" id="Next7"> Avanti </button>
+                        <button type="button" id="Next7" onclick="evaluateSeventh();"> Avanti </button>
                     </div>
 
                 </form>
@@ -351,7 +351,7 @@
 
                     <h3> Alimentatore </h3>
                     <select name="slct" id="slct-psu">
-                        <option selected disabled>Selezionare una scelta</option>
+                        <option selected disabled>Selezionare un alimentatore:</option>
                         <option value="1">EVGA 450W BR, 80 Plus Bronze Non modulare : 45€</option>
                         <option value="2">Corsair CV450W 80 Plus Bronze Non modulare : 74€</option>
                         <option value="3">THERMALTAKE SMART SE 530W MODULARE : 64€</option>
@@ -367,9 +367,9 @@
 
                     <div class="btn-box">
                         <!-- Bottone per proseguire alla pagina precedente della form-->
-                        <button type="button" id="Back7"> Indietro </button>
+                        <button type="button" id="Back7" onclick="BackSeventh();"> Indietro </button>
                         <!-- Bottone per proseguire alla pagina successiva della form-->
-                        <button type="button" id="Next8"> Avanti </button>
+                        <button type="button" id="Next8" onclick="evaluateEighth();"> Avanti </button>
                     </div>
 
                 </form>
@@ -378,7 +378,7 @@
 
                     <h3> Case </h3>
                     <select name="slct" id="slct-case">
-                        <option selected disabled>Selezionare una scelta</option>
+                        <option selected disabled>Selezionare un case:</option>
                         <option value="1"> Corsair Carbide Series SPEC-DELTA : 100€</option>
                         <option value="2"> NZXT H510 Black : 101€</option>
                         <option value="3"> Corsair 110Q Black : 29€</option>
@@ -392,9 +392,9 @@
                     </select>
                     <div class="btn-box">
                         <!-- Bottone per proseguire alla pagina precedente della form-->
-                        <button type="button" id="Back8"> Indietro </button>
+                        <button type="button" id="Back8" onclick="BackEighth();"> Indietro </button>
                         <!-- Bottone per proseguire alla pagina successiva della form-->
-                        <button type="button" id="Next9"> Avanti </button>
+                        <button type="button" id="Next9" onclick="evaluateNinth();"> Avanti </button>
                     </div>
 
 
@@ -404,7 +404,7 @@
 
                     <h3> Ventole Case </h3>
                     <select name="slct" id="slct-fan">
-                        <option selected disabled>Selezionare una scelta</option>
+                        <option selected disabled>Selezionare una ventola:</option>
                         <option value="1">Corsair ML120 Ventola a Levitazione Magnetica : 23€</option>
                         <option value="2">Corsair LL120 RGB Ventola da 120 mm : 29€</option>
                         <option value="3">Noctua NF-P14s redux-1500 PWM : 15€</option>
@@ -414,9 +414,9 @@
 
                     <div class="btn-box">
                         <!-- Bottone per proseguire alla pagina precedente della form-->
-                        <button type="button" id="Back9"> Indietro </button>
+                        <button type="button" id="Back9" onclick="BackNinth();"> Indietro </button>
                         <!-- Bottone per confermare le scelte della configurazione-->
-                        <button type="submit" id="Submit" onclick="evaluateBuild(this.form.);"> Fine </button>
+                        <button type="button" id="Submit" onclick="evaluateBuild();"> Fine </button>
                     </div>
 
 

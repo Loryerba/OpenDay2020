@@ -5,7 +5,7 @@
  */
 
 
-
+//funzione richiamata per la visualizzazione della form2 e validazione della form 1
 function evaluateFirst() {
 
     var Next1 = document.getElementById("Next1");
@@ -26,6 +26,7 @@ function evaluateFirst() {
 
 }
 
+//funzione richiamata per la visualizzazione della form1
 function BackFirst() {
     var Form1 = document.getElementById("Form1");
     var Form2 = document.getElementById("Form2");
@@ -37,7 +38,7 @@ function BackFirst() {
 
 }
 
-
+//funzione richiamata per la visualizzazione della form3 e validazione della form 2
 function evaluateSecond() {
 
     var Form2 = document.getElementById("Form2");
@@ -58,18 +59,250 @@ function evaluateSecond() {
 
 }
 
-
+//funzione richiamata per la visualizzazione della form2
 function BackSecond() {
     var Form2 = document.getElementById("Form2");
     var Form3 = document.getElementById("Form3");
     var progress = document.getElementById("progress");
-    
+
     Form2.style.left = "120px";
     Form3.style.left = "1200px";
     progress.style.width = "240px";
 
 }
 
+//funzione richiamata per la visualizzazione della form4 e validazione della form3
+function evaluateThird() {
+    var Form3 = document.getElementById("Form3");
+    var Form4 = document.getElementById("Form4");
+    var progress = document.getElementById("progress");
+
+    var list = document.getElementById("slct-cooler");
+    var index = list.value;
+
+    if (index == "Selezionare un dissipatore") {
+        window.alert("Prima di procedere, selezionare un dissipatore.");
+    } else {
+        Form3.style.left = "-1200px";
+        Form4.style.left = "120px";
+        progress.style.width = "480px";
+    }
+}
+
+//funzione richiamata per la visualizzazione della form3
+function BackThird() {
+
+    var Form3 = document.getElementById("Form3");
+    var Form4 = document.getElementById("Form4");
+    var progress = document.getElementById("progress");
+
+    Form3.style.left = "120px";
+    Form4.style.left = "1200px";
+    progress.style.width = "360px";
+
+}
+
+//funzione richiamata per la visualizzazione della form5 e validazione della form4
+function evaluateFourth() {
+    var Form4 = document.getElementById("Form4");
+    var Form5 = document.getElementById("Form5");
+    var progress = document.getElementById("progress");
+
+    var list = document.getElementById("slct-ram");
+    var index = list.value;
+
+    if (index == "Selezionare la memoria ram:") {
+        window.alert("Prima di procedere, selezionare la memoria ram.");
+    } else {
+        Form4.style.left = "-1200px";
+        Form5.style.left = "120px";
+        progress.style.width = "600px";
+    }
+}
+
+//funzione richiamata per la visualizzazione della form4
+function BackFourth() {
+
+    var Form4 = document.getElementById("Form4");
+    var Form5 = document.getElementById("Form5");
+    var progress = document.getElementById("progress");
+
+    Form4.style.left = "120px";
+    Form5.style.left = "1200px";
+    progress.style.width = "480px";
+
+}
+
+//funzione richiamata per la visualizzazione della form6 e validazione della form5
+function evaluateFifth() {
+
+    var Form5 = document.getElementById("Form5");
+    var Form6 = document.getElementById("Form6");
+    var progress = document.getElementById("progress");
+
+    var list = document.getElementById("slct-gpu");
+    var index = list.value;
+
+    if (index == "Selezionare una scheda video:") {
+        window.alert("Prima di procedere, selezionare la scheda video.");
+    } else {
+        Form5.style.left = "-1200px";
+        Form6.style.left = "120px";
+        progress.style.width = "720px";
+    }
 
 
+}
 
+//funzione richiamata per la visualizzazione della form5
+function BackFifth() {
+
+    var Form5 = document.getElementById("Form5");
+    var Form6 = document.getElementById("Form6");
+    var progress = document.getElementById("progress");
+
+    Form5.style.left = "120px";
+    Form6.style.left = "1200px";
+    progress.style.width = "600px";
+}
+
+//funzione richiamata per la visualizzazione della form7 e validazione della form6
+function evaluateSixth() {
+
+    var Form7 = document.getElementById("Form7");
+    var Form6 = document.getElementById("Form6");
+    var progress = document.getElementById("progress");
+
+    var list = document.getElementById("slct-hdd");
+    var index = list.value;
+
+    if (index == "Selezionare un Hard Disk:") {
+        window.alert("Prima di procedere, selezionare un Hard Disk.");
+    } else {
+        Form6.style.left = "-1200px";
+        Form7.style.left = "120px";
+        progress.style.width = "840px";
+    }
+
+
+}
+
+//funzione richiamata per la visualizzazione della form6
+function BackSixth() {
+    var Form6 = document.getElementById("Form6");
+    var Form7 = document.getElementById("Form7");
+    var progress = document.getElementById("progress");
+
+
+    Form6.style.left = "120px";
+    Form7.style.left = "1200px";
+    progress.style.width = "720px";
+}
+
+//funzione richiamata per la visualizzazione della form8 e validazione della form7
+function evaluateSeventh() {
+    var Form7 = document.getElementById("Form7");
+    var Form8 = document.getElementById("Form8");
+    var progress = document.getElementById("progress");
+
+    var list = document.getElementById("slct-ssd");
+    var index = list.value;
+
+    if (index == "Selezionare un SSD:") {
+        window.alert("Prima di procedere, selezionare una SSD.");
+    } else {
+        Form7.style.left = "-1200px";
+        Form8.style.left = "120px";
+        progress.style.width = "960px";
+    }
+
+}
+
+//funzione richiamata per la visualizzazione della form7
+function BackSeventh() {
+
+    var Form8 = document.getElementById("Form8");
+    var Form7 = document.getElementById("Form7");
+    var progress = document.getElementById("progress");
+
+    Form7.style.left = "120px";
+    Form8.style.left = "1200px";
+    progress.style.width = "840px";
+
+}
+
+
+function evaluateEighth() {
+    var Form9 = document.getElementById("Form9");
+    var Form8 = document.getElementById("Form8");
+    var progress = document.getElementById("progress");
+
+    var list = document.getElementById("slct-psu");
+    var index = list.value;
+
+    if (index == "Selezionare un alimentatore:") {
+        window.alert("Prima di procedere, selezionare un alimentatore.");
+    } else {
+        Form8.style.left = "-1200px";
+        Form9.style.left = "120px";
+        progress.style.width = "1080px";
+    }
+
+}
+
+function BackEighth() {
+
+    var Form8 = document.getElementById("Form8");
+    var Form9 = document.getElementById("Form9");
+    var progress = document.getElementById("progress");
+
+    Form8.style.left = "120px";
+    Form9.style.left = "1200px";
+    progress.style.width = "960px";
+}
+
+
+function evaluateNinth() {
+    var Form9 = document.getElementById("Form9");
+    var Form10 = document.getElementById("Form10");
+    var progress = document.getElementById("progress");
+
+    var list = document.getElementById("slct-case");
+    var index = list.value;
+
+    if (index == "Selezionare un case:") {
+        window.alert("Prima di procedere, selezionare un case.");
+    } else {
+        Form9.style.left = "-1200px";
+        Form10.style.left = "120px";
+        progress.style.width = "1200px";
+    }
+
+
+}
+
+
+function BackNinth() {
+    
+    var Form10 = document.getElementById("Form10");
+    var Form9 = document.getElementById("Form9");
+    var progress = document.getElementById("progress");
+
+    Form9.style.left = "120px";
+    Form10.style.left = "1200px";
+    progress.style.width = "1080px";
+}
+
+function evaluateBuild(){
+    
+    var list = document.getElementById("slct-fan");
+    var index = list.value;
+    var Form10 = document.getElementById("Form10");    
+    if (index == "Selezionare una ventola:") {
+        window.alert("Prima di procedere, selezionare una ventola.");
+    }
+    else{
+        Form10.submit();
+    }
+    
+}
