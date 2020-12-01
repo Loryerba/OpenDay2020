@@ -1,12 +1,1 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-prova1
-=======
->>>>>>> parent of b51b96b... Merge pull request #10 from Loryerba/HomePage
-=======
-prova1
->>>>>>> parent of 241b5c6... Merge branch 'master' into Wiki
-=======
-prova1
->>>>>>> parent of 241b5c6... Merge branch 'master' into Wiki
+
