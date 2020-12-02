@@ -6,7 +6,7 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>Page Title</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <script src="js/jsConfigAvanzato.js"></script>
+        <script src="js/jsProduct.js"></script>
         <link rel="stylesheet" type="text/css" href="css/animate.css">
         <link rel='stylesheet' type='text/css' media='screen' href='css/styleProduct.css'>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -54,6 +54,7 @@
             color: #990099;
             border-bottom-color: #990099;
         }
+
     </style>
 
 
@@ -102,14 +103,21 @@
             <!-- Sezione di breve descrizione-->
             <div class="short-description">
                 <!-- Breve descrizione-->
-                 <p style="text-align:center; color:#fff" > <b> Bne fatto! </b> Hai completato la configurazione del tuo futuro computer. Qui sotto trovi un riassunto di tutti i componenti
+                 <p style="text-align:center; color:#fff" > <b> Ben fatto! </b> Hai completato la configurazione del tuo futuro computer. Qui sotto trovi un riassunto di tutti i componenti
                 selezionati precedentemente, col relativo costo e il link Amazon dove acquistarli. Selezionando il bottone "Scarica PDF" otterrai in formato pdf, la tua configurazione.
                 <b>Buon divertimento e... alla prossima! </b>
 
             </div>
             
             <div class="center-box">
-                <p style="color:#fff"> Processore: </p>
+                
+                <p id="build" style="color: #00cccc">
+                <script>
+                    getChoice();
+                    </script>
+                    
+                </p>
             </div>
+            <button class="w3-button w3-cyan w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"> ciao </button>
     </body>
 </html>

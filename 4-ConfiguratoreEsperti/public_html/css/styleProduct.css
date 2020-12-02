@@ -38,7 +38,27 @@ body{
     left:760px;
     background:linear-gradient(rgba(202, 198, 198, 0.4), rgba(202,198,198,0.4)); 
     position:relative;
-    
+    overflow: auto;
+    scrollbar-width:thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
 
 
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: grey; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: lightblue; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

@@ -231,7 +231,7 @@ function BackSeventh() {
 
 }
 
-
+//funzione richiamata per la visualizzazione della form9 e validazione della form8
 function evaluateEighth() {
     var Form9 = document.getElementById("Form9");
     var Form8 = document.getElementById("Form8");
@@ -250,6 +250,7 @@ function evaluateEighth() {
 
 }
 
+//funzione richiamata per la visualizzazione della form8
 function BackEighth() {
 
     var Form8 = document.getElementById("Form8");
@@ -262,6 +263,7 @@ function BackEighth() {
 }
 
 
+//funzione richiamata per la visualizzazione della form9 e validazione della form10
 function evaluateNinth() {
     var Form9 = document.getElementById("Form9");
     var Form10 = document.getElementById("Form10");
@@ -281,9 +283,9 @@ function evaluateNinth() {
 
 }
 
-
+//funzione richiamata per la visualizzazione della form9
 function BackNinth() {
-
+    
     var Form10 = document.getElementById("Form10");
     var Form9 = document.getElementById("Form9");
     var progress = document.getElementById("progress");
@@ -293,18 +295,71 @@ function BackNinth() {
     progress.style.width = "1080px";
 }
 
-function evaluateBuild() {
-
+//funzione richiamata per la visualizzazione della pagina di resoconto e validazione della form10
+function evaluateBuild(){
+    
     var list = document.getElementById("slct-fan");
     var index = list.value;
-    var Form10 = document.getElementById("Form10");
+    var Form10 = document.getElementById("Form10");    
     if (index == "Selezionare una ventola:") {
         window.alert("Prima di procedere, selezionare una ventola.");
-    } else {
-        //tramite il submit la form viene aggiornata e calcolate le informazioni
+    }
+    else{
+        evaluateChoice();
+        //azzeramento della form
         Form10.submit();
+        //apertura in un'altra tab, della pagina relativa al resconto
         var win = window.open("product.html", '_blank');
         win.focus();
     }
+    
+}
 
+function evaluateChoice(){
+    
+    sessionStorage.clear();
+    var choice = [];
+    
+    var cpu = document.getElementById("slct-cpu");
+    cpu = cpu.options[cpu.selectedIndex].text;
+    choice.push(cpu);
+    
+     var mobo = document.getElementById("slct-mobo");
+    mobo = mobo.options[mobo.selectedIndex].text;
+    choice.push(mobo);
+    
+     var cooler = document.getElementById("slct-cooler");
+    cooler = cooler.options[cooler.selectedIndex].text;
+    choice.push(cooler);
+    
+     var ram = document.getElementById("slct-ram");
+    ram = ram.options[ram.selectedIndex].text;
+    choice.push(ram);
+    
+     var gpu = document.getElementById("slct-gpu");
+    gpu = gpu.options[gpu.selectedIndex].text;
+    choice.push(gpu);
+    
+    var hdd = document.getElementById("slct-hdd");
+    hdd = hdd.options[hdd.selectedIndex].text;
+    choice.push(hdd);
+    
+     var ssd = document.getElementById("slct-ssd");
+    ssd = ssd.options[ssd.selectedIndex].text;
+    choice.push(ssd);
+    
+     var psu = document.getElementById("slct-psu");
+    psu = psu.options[psu.selectedIndex].text;
+    choice.push(psu);
+    
+    var Case = document.getElementById("slct-case");
+    Case = Case.options[Case.selectedIndex].text;
+    choice.push(Case);
+    
+     var fan = document.getElementById("slct-fan");
+    fan = fan.options[fan.selectedIndex].text;
+    choice.push(fan);
+    
+    sessionStorage.setItem("choice",  JSON.stringify(choice));
+    
 }
