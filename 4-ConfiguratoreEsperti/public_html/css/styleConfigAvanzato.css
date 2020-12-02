@@ -18,7 +18,7 @@ body{
     border-radius: 5px;
     overflow: hidden;
     z-index: 1;
-	box-shadow: 0px 7px 5px 5px #00cccc;
+    box-shadow: 0px 7px 5px 5px #00cccc;
 }
 
 h3{
@@ -174,7 +174,7 @@ progress::after{
 
 	margin: auto;
 	padding-top:15px;
-    width: 1000px;
+        width: 1000px;
 
 }
 
@@ -188,3 +188,5 @@ progress::after{
 	background-color:#990099;
 	
 }
+
+

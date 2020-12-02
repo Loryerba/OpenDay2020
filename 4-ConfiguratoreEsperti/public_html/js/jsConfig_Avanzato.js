@@ -283,7 +283,7 @@ function evaluateNinth() {
 
 
 function BackNinth() {
-    
+
     var Form10 = document.getElementById("Form10");
     var Form9 = document.getElementById("Form9");
     var progress = document.getElementById("progress");
@@ -293,16 +293,18 @@ function BackNinth() {
     progress.style.width = "1080px";
 }
 
-function evaluateBuild(){
-    
+function evaluateBuild() {
+
     var list = document.getElementById("slct-fan");
     var index = list.value;
-    var Form10 = document.getElementById("Form10");    
+    var Form10 = document.getElementById("Form10");
     if (index == "Selezionare una ventola:") {
         window.alert("Prima di procedere, selezionare una ventola.");
-    }
-    else{
+    } else {
+        //tramite il submit la form viene aggiornata e calcolate le informazioni
         Form10.submit();
+        var win = window.open("product.html", '_blank');
+        win.focus();
     }
-    
+
 }
