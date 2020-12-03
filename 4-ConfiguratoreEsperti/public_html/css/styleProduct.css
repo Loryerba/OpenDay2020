@@ -30,19 +30,31 @@ body{
 }
 
 
-.center-box{
+.center-box-left{
     
     width:400px;
     height:400px;
     top: 20px;
-    left:760px;
-    background:linear-gradient(rgba(202, 198, 198, 0.4), rgba(202,198,198,0.4)); 
+    left:550px;
+    background:linear-gradient(rgba(202, 198, 198, 0.2), rgba(202,198,198,0.2)); 
+    float:left;
     position:relative;
-    overflow: auto;
+    overflow:auto;
     scrollbar-width:thin;
     scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
 
+
+.center-box-right{
+    
+    width:400px;
+    height:400px;
+    top: 20px;
+    right:550px;
+    box-shadow: 2px 7px 5px 5px #00cccc;
+    float:right;
+    position:relative;
+}
 
 ::-webkit-scrollbar {
   width: 11px;
@@ -119,3 +131,4 @@ body{
 
 
 }
+

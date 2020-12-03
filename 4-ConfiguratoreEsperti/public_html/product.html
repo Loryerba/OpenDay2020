@@ -7,12 +7,17 @@
         <title>Page Title</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <script src="js/jsProduct.js"></script>
+        <script src="js/myscript.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <link rel="stylesheet" type="text/css" href="css/animate.css">
         <link rel='stylesheet' type='text/css' media='screen' href='css/styleProduct.css'>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
+
 
     <style>
         body,
@@ -92,34 +97,43 @@
             <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
             <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
         </nav>
-	
 
-            <!--Sezione di benvenuto-->
-            <div class="benvenuto">
-                <!-- Titolo di benvenuto-->
-                <h1 class = "w3-wide" style = "text-align: center; color: #fff"> LA TUA CONFIGURAZIONE </h1>
 
-            </div>
-            <!-- Sezione di breve descrizione-->
-            <div class="short-description">
-                <!-- Breve descrizione-->
-                 <p style="text-align:center; color:#fff" > <b> Ben fatto! </b> Hai completato la configurazione del tuo futuro computer. Qui sotto trovi un riassunto di tutti i componenti
+        <!--Sezione di benvenuto-->
+        <div class="benvenuto">
+            <!-- Titolo di benvenuto-->
+            <h1 class = "w3-wide" style = "text-align: center; color: #fff"> LA TUA CONFIGURAZIONE </h1>
+
+        </div>
+        <!-- Sezione di breve descrizione-->
+        <div class="short-description">
+            <!-- Breve descrizione-->
+            <p style="text-align:center; color:#fff" > <b> Ben fatto! </b> Hai completato la configurazione del tuo futuro computer. Qui sotto trovi un riassunto di tutti i componenti
                 selezionati precedentemente, col relativo costo e il link Amazon dove acquistarli. Selezionando il bottone "Scarica PDF" otterrai in formato pdf, la tua configurazione.
                 <b>Buon divertimento e... alla prossima! </b>
 
-            </div>
-            
-            <div class="center-box">
-                
+        </div>
+
+        <div class="center">
+            <div class="center-box-left">
+
                 <p id="build" style="color: #00cccc">
-                <script>
-                    getChoice();
+                    <script>
+                        getChoice();
                     </script>
-                    
+
                 </p>
-                
-                
+
             </div>
-    <center> <button class="buttonPdf"> <span> Scarica PDF </span> </button>
-    </body>
+
+
+            <div class="center-box-right">
+
+                <center> <img src="img/Amd Ryzen 5 3600.png" style="background: transparent ;">
+
+            </div>
+
+        </div>
+    </div>
+</body>
 </html>
