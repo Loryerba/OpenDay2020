@@ -35,11 +35,7 @@ and open the template in the editor.
 
 .divContenitore4{
 
-<<<<<<< Updated upstream
     margin-top: 770px;
-=======
-    margin-top: 780px;
->>>>>>> Stashed changes
 
 }
 
@@ -281,11 +277,7 @@ shadow
     -moz-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
     -webkit-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
     box-shadow:inset 0px 0px 6px 6px rgba(84, 89, 89, 1);
-<<<<<<< Updated upstream
     margin-top :3.04%;
-=======
-    margin-top :3.4%;
->>>>>>> Stashed changes
 }
 
 /* PER MOUSE LOGITECH */
@@ -314,51 +306,4 @@ shadow
     -webkit-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
     box-shadow:inset 0px 0px 6px 6px rgba(84, 89, 89, 1);
     margin-top :2.5%;
-<<<<<<< Updated upstream
-=======
-}
-
-
-/* MONITOR FULL HD e 2K */
-.shadow5:before
-{
-    display:block;
-    content:'';
-    position:absolute;
-    width:224px;
-    height:173px;
-    -moz-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
-    -webkit-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
-    box-shadow:inset 0px 0px 6px 6px rgba(84, 89, 89, 1);
-    margin-top :1.4%;
-}
-
-/* MONITOR 4K */
-.shadow6:before
-{
-    display:block;
-    content:'';
-    position:absolute;
-    width:224px;
-    height:196px;
-    -moz-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
-    -webkit-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
-    box-shadow:inset 0px 0px 6px 6px rgba(84, 89, 89, 1);
-    margin-top :0.75%;
-}
-
-/* METEOR MIC */
-.shadow7:before
-{
-    display:block;
-    content:'';
-    position:absolute;
-    width:148px;
-    height:224px;
-    -moz-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
-    -webkit-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
-    box-shadow:inset 0px 0px 6px 6px rgba(84, 89, 89, 1);
-    margin-top :auto;
-    margin-left :2%;
->>>>>>> Stashed changes
 }
