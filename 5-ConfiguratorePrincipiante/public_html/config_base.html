@@ -9,9 +9,10 @@ and open the template in the editor.
         <title> PROVA DELLA PROGRESS BAR</title>
         <link rel="stylesheet" type="text/css" href="css/styleConfigBase.css">
         <meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon"  type="image/x-icon" href="favicon.ico" />
+        <script type="text/javascript" src='JS/mainConfiguratorePrincipiante.js'></script>
 
 
         <!-- nav bar -->
@@ -24,8 +25,11 @@ and open the template in the editor.
     </head>
 
     <!-- STILI PER LA NAV BAR -->
-    
+
     <style>         body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}          body, html {             height: 100%;             line-height: 1.8;         }          /* Full height image header */         .bgimg-1 {             background-position: center;             background-size: cover;             background-image: url("/w3images/mac.jpg");             margin-top : 8%;         }          .w3-bar .w3-button {             display: block;             padding: 0px;              border-bottom: 2px solid transparent;              transition: border-bottom-color 0.5s ease-out;             -webkit-transition: border-bottom-color 0.5s ease-out;         }           .w3-bar .w3-button:hover {             color: #990099;             border-bottom-color: #990099;             }          .dropbtn {             background-color: #4CAF50;             color: white;             padding: 16px;             font-size: 16px;             border: none;             cursor: pointer;         }  </style>
+
+    <!-- Style separato per poter gestire il keyframe della progress bar da JS -->
+
 
     <body>
 
@@ -69,28 +73,26 @@ and open the template in the editor.
 
         </div>
 
+        <br>
+        <br>
+        <br>
 
-        <div class="circle-wrap">
-            <div class="circle">
+        <div id = "precentuale">
+            <h4 id = "text" style = "text-align: center; color: #990099"> 0% </h4>
+        </div>
 
-                <div class="mask full">
-                    <div class="fill"></div>
-                </div>
-
-                <div class="mask half">
-                    <div class="fill"></div>
-                </div>
-
-                <div class="inside-circle">
-                    10%
-                </div>
-
+        <div id="container">
+            <div id="bar-container">
+                <div id="bar"></div>
             </div>
-
         </div>
 
         <br>
         <br>
+        <br>
+        <br>
+        <br>
+
 
         <div class ="row">
 
@@ -98,10 +100,10 @@ and open the template in the editor.
 
             <div class = "divSinistra">
 
-                <h4 style = "text-align: center; color: #990099"> SCRITTA A COMPARSA </h4> 
+                <h4 style = "text-align: center; color: #990099"> COME FUNZIONA? </h4> 
 
-                <br>
-                <p style = "text-align: center;"> La scheda madre è un circuito stampato (o PCB) ovvero un supporto che viene usato per connettere e mettere in comunicazione dei componenti in un circuito elettronico. In questo caso specifico si occupa di ospitare e mettere in comunicazione tutti i componenti che vanno a comporre il PC, oltre ad includere alcuni dei componenti necessari per il corretto funzionamento dello stesso. </p>
+
+                <p style = "text-align: center;"> La CPU è il cuore operativo di qualsiasi computer, CPU è un acronimo che sta per central processing unit, cioè unità centrale di elaborazione. Dal punto di vista informatico, il compito di una CPU è quello di eseguire le istruzioni dei programmi. Un pc gaming deve essere dedicato al gioco, quindi ricordatevi di prendere in considerazione due cose fondamentali: la velocità dell’operatività e il numero di core, ovvero la potenza del componente. </p>
 
 
             </div>
@@ -110,31 +112,116 @@ and open the template in the editor.
 
             <div class="block">
 
-                <h4 style = "text-align: center; color: #990099"> SCHEDA MADRE </h4> 
+                <form id ="form1">
 
-                <br>
-                <p style = "text-align: center;"> Marca: </p>
-                <br>
-                <p style = "text-align: center;"> Modello: </p>
-                <br>
-                <p style = "text-align: center;"> Costo: </p>
-                <br>
-                <p style = "text-align: center;"> Specifiche: </p>
+                    <h4  style = "text-align: center; color: #990099" id = "statoComponente"> PROCESSORE </h4> 
 
-                <br>
-                <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
 
-                <p style = "text-align: center;">Scegli il prodotto desiderato: </p>           
-                <select name="componente1Princ" class = "classeSelect">
-                    <option value="Test1">Test1</option>
-                    <option value="Test2">Test2</option>
-                </select>
+                    <p style = "text-align: center;">Scegli il prodotto desiderato: </p>           
+                    <select name="componente1Princ" class = "classeSelect">
+                        <option selected disabled>Nessun prodotto selezionato!</option>
+                        <option value="1">Amd Ryzen 3 3200G : 144€</option>
+                        <option value="2">Amd Ryzen 5 2600X : 153€</option>
+                        <option value="3">Amd Ryzen 5 3400G : 214€</option>
+                        <option value="4">Amd Ryzen 5 3600 : 284€</option>
+                        <option value="5">Amd Ryzen 5 3600X : 266€</option>
+                        <option value="6">Amd Ryzen 7 2700X : 228€</option>
+                        <option value="7">Amd Ryzen 7 3700X : 319€</option>
+                        <option value="8">Amd Ryzen 7 3800X : 345€</option>
+                        <option value="10">Amd Ryzen 9 3900XT: 502€</option>
+                        <option value="11">Amd Ryzen 9 3950X: 458€</option>
 
-                <br>
-                <br>
 
-                <button class="bottoneIndietro"> <span>Indietro</span> </button>
-                <button class="bottone"> <span>Avanti</span> </button>
+                        <option value="12">Intel i3 9100 : 133€</option>
+                        <option value="13">Intel i3 9100F : 105€</option>
+                        <option value="14">Intel i5 8400 : 198€ </option>
+                        <option value="15">Intel i5 8600K : 241€</option>
+                        <option value="16">Intel i5 9400F : 167€ </option>
+                        <option value="16">Intel i5 9600 : 289€</option>
+                        <option value="17">Intel i5 9600F : 184€</option>
+                        <option value="18">Intel i7 8700 : 332€</option>
+                        <option value="19">Intel i7 9700 : 300€</option>
+                        <option value="20">Intel i7 9700K : 308€</option>
+                        <option value="21">Intel i7 10700 : 370€</option>
+                        <option value="22">Intel i7 10700K : 380€</option>
+                        <option value="23">Intel i9 10900K : 553€</option>
+                    </select>
+
+                    <br>
+
+                    <p style = "text-align: center;"> Costo: </p>
+
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                </form>
+
+                <form id ="form2" hidden>
+
+                    <h4  style = "text-align: center; color: #990099" id = "statoComponente"> SCHEDA MADRE </h4> 
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <p style = "text-align: center;">Scegli il prodotto desiderato: </p>           
+                    <select name="componente2Princ" class = "classeSelect">
+                        <option selected disabled>Nessun prodotto selezionato!</option>
+                        <!-- SCHEDE MADRI PER PROCESSORI RYZEN (TUTTE COMPATIBILI DALLA SERIE 3 ALLA SERIE 9-->
+                        <option value="1">Gigabyte B450M DS3H : 72€</option>
+                        <option value="2">Asus ROG STRIX B450-F GAMING : 162€</option>
+                        <option value="3">MSI B450 GAMING PLUS MAX : 86€</option>
+                        <option value="4"> ASUS TUF Gaming X570-Plus (WI-FI) : 240€ </option>
+                        <option value="5"> ASRock B550 PHANTOM GAMING-ITX : 144€ </option>
+                        <option value="6"> MSI B550-A PRO : 135€</option>
+                        <option value="7"> ASUS PRIME B550-PLUS : 141€</option>
+                        <option value="8"> ASUS Prime X570-PRO : 253€</option>
+                        <option value="9">ASUS ROG Strix X570-F : 283€</option>
+                        <option value="10"> GIGABYTE B550 AORUS : 162€</option>
+                        <!-- SCHEDE MADRI PER PROCESSORI INTEL -->
+                        <option value="1">ASUS ROG STRIX Z390-F : 273€</option>
+                        <option value="2">ASUS TUF Z390-PLUS : 214€</option>
+                        <option value="3">MSI B365M PRO-VH M.Atx : 60€</option>
+                        <option value="4"> MSI MPG Z390 GAMING PLUS </option>
+                        <option value="5"> Gigabyte Z390 UD : 118€</option>
+                        <option value="6"> Asus Z390 ROG MAXIMUS XI HERO : 231€</option>
+                        <!-- Da i7 decima generazione a i9 oltre alle precedenti, si aggiungono le seguenti-->
+                        <option value="7"> ASUS ROG STRIX B460-H GAMING : 142€</option>
+                        <option value="8"> ASUS TUF GAMING B460-PRO (WI-FI) : 166€</option>
+                        <option value="9">ASUS ROG STRIX Z490-H : 247€</option>
+                        <option value="10">ASUS ROG MAXIMUS XII FORMULA : 638€</option>
+                    </select>
+
+                    <br>
+
+                    <p style = "text-align: center;"> Costo: </p>
+
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                </form> 
+
+                <button id="bottoneIndietro" onclick="indietro()"> <span>Indietro</span> </button>
+                <button class="bottone" onclick = "avanti()"> <span>Avanti</span> </button>
 
             </div>
 
@@ -169,23 +256,6 @@ and open the template in the editor.
             </div>
         </header>
 
-
-        <script type="text/javascript">
-
-            window.addEventListener("DOMContentLoaded", function (e) {
-
-                var stage = document.getElementById("stage");
-                var fadeComplete = function (e) {
-                    stage.appendChild(arr[0]);
-                };
-                var arr = stage.getElementsByTagName("a");
-                for (var i = 0; i < arr.length; i++) {
-                    arr[i].addEventListener("animationend", fadeComplete, false);
-                }
-
-            }, false);
-
-        </script>
 
 
     </body>
