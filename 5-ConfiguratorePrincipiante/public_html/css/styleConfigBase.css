@@ -1,0 +1,324 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28 ott 2020, 15:01:01
+    Author     : Matteo
+*/
+
+
+.circle-wrap {
+    margin: 50px auto;
+    width: 150px;
+    height: 150px;
+    background: #e6e2e7;
+    border-radius: 50%;
+    margin-left:47%;
+    margin-top: 4%;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .circle .mask .fill {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #990099;  /* Colore barra progresso */
+}
+.circle-wrap .circle .mask.full,
+.circle-wrap .circle .fill {
+    animation: fill ease-in-out 3s;
+    transform: rotate(25deg);
+}
+@keyframes fill {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(25deg);
+    }
+}
+
+.circle-wrap .inside-circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #fff;
+    line-height: 130px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.bottone {
+    border-radius: 4px;
+    background-color: white;
+    border: 2px solid #990099;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 32px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 4px 2px;
+    float:right;
+    margin-right: 2%;
+}
+
+/* CREAZIONE FRECCIA */
+
+.bottone span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.bottone span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.bottone:hover span {
+    padding-right: 25px;
+
+
+}
+
+.bottone:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.bottone:hover{
+
+    background-color: #990099;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+
+}
+
+.bottoneIndietro {
+    border-radius: 4px;
+    background-color: white;
+    border: 2px solid #990099;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 32px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 4px 2px;
+    float:left;
+    margin-left: 2%;
+}
+
+/* CREAZIONE FRECCIA */
+
+.bottoneIndietro span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.bottoneIndietro span:after {
+    content: '\00AB';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+}
+
+.bottoneIndietro:hover span {
+    padding-left: 25px;
+
+
+}
+
+.bottoneIndietro:hover span:after {
+    opacity: 1;
+    left: 0;
+}
+
+.bottoneIndietro:hover{
+
+    background-color: #990099;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+
+}
+
+
+.centro{
+
+    text-align:center;
+
+
+}
+
+.centroImmagine{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.classeSelect{
+    width:70%; 
+    margin-left: auto; 
+    margin-right: auto;
+    display: block;
+}
+
+.row {
+    width: 100%;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+.divBenvenuto{
+
+    margin: auto;
+    border: 2px groove black;
+    padding: 1px;
+    box-shadow: 5px 10px 18px gray;
+    width: 1200px;
+    margin-top: 200px;
+
+}
+
+
+/* --------------------------------------------------- BORDO DIV SINISTRA -------------------------------------------------------- */
+
+.divSinistra{
+
+    margin-top :6%;
+    margin-left :10%;
+    float: left;
+    padding: 10px;
+    border: 3px groove #990099;
+    width: 300px;
+    height: 460px;
+    box-shadow: 5px 10px 18px #990099;
+
+
+}
+
+/* --------------------------------------------------- BORDO DIV SINISTRA -------------------------------------------------------- */
+
+.divDestra{
+
+    margin-top :-24.5%;
+    margin-right :10%;
+    float: right;
+    padding: 10px;
+    border: 3px groove #990099;
+    width: 310px;
+    height: 310px;
+    box-shadow: 5px 10px 18px #990099;
+
+
+}
+
+
+/* --------------------------------------------------- BORDO COLORATO -------------------------------------------------------- */
+
+.block {
+    position: relative;
+    margin: auto;
+    width: 350px;
+    height: 680px;
+    border: 3px groove cyan;
+    box-shadow: 5px 10px 18px cyan;
+    background: linear-gradient(0deg, white, white);
+    padding : 15px;
+}
+
+ .block:before, .block:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+        #0000ff, #00ff00,#ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 50s linear infinite;
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.block:after {
+    filter: blur(50px);
+}
+
+/* GALLERY */
+
+#stage {
+    margin: auto;
+    width: 382px;
+    height: 292px;
+}
+
+#stage a {
+    position: absolute;
+}
+#stage a img {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+#stage a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+}
+#stage a:nth-of-type(2) {
+    z-index: 10;
+}
+#stage a:nth-of-type(n+3) {
+    display: none;
+}
+
+@keyframes fader {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+}
