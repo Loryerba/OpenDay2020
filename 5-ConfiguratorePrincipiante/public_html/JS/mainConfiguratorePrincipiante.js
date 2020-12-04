@@ -22,9 +22,18 @@ function avanti() {
     switch (contatore) {
 
         case 1:
+            
+            // Toggle dell'effetto di fade-out
+            
+            document.getElementById("form1").classList.toggle("fade-out");
 
-            document.getElementById("form1").hidden = true;
-            document.getElementById("form2").hidden = false;
+
+            // Setto l'elemento come nascosto con un timeout, in modo da completare l'animazione di fade-out
+            setTimeout(() => {  document.getElementById("form1").hidden = true; }, 1000);
+            
+            // Setto un delay per rendere fisibile il prossimo elemento e per far partire l'effetto di fade-in in modo da completare quella precedente
+            setTimeout(() => {  document.getElementById("form2").hidden = false;  document.getElementById("form2").classList.toggle("fade-in");}, 1000);
+               
 
             // Rendo visibile il bottone indietro perchè dopo la prima volta posso andare indietro
             document.getElementById("bottoneIndietro").style.visibility = "visible";
