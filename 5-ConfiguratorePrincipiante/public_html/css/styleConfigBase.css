@@ -8,7 +8,9 @@ and open the template in the editor.
     Author     : Matteo
 */
 
-.bottone {
+/* CREAZIONE FRECCIA */
+
+#bottone{
     border-radius: 4px;
     background-color: white;
     border: 2px solid #990099;
@@ -25,16 +27,14 @@ and open the template in the editor.
     margin-right: 2%;
 }
 
-/* CREAZIONE FRECCIA */
-
-.bottone span {
+#bottone span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
 
-.bottone span:after {
+#bottone span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -43,18 +43,18 @@ and open the template in the editor.
     transition: 0.5s;
 }
 
-.bottone:hover span {
+#bottone:hover span {
     padding-right: 25px;
 
 
 }
 
-.bottone:hover span:after {
+#bottone:hover span:after {
     opacity: 1;
     right: 0;
 }
 
-.bottone:hover{
+#bottone:hover{
 
     background-color: #990099;
     color: white;
@@ -70,7 +70,7 @@ and open the template in the editor.
     color: black;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    /*display: inline-block;*/
     font-size: 16px;
     padding: 15px 32px;
     transition: all 0.5s;
@@ -78,7 +78,6 @@ and open the template in the editor.
     margin: 4px 2px;
     float:left;
     margin-left: 2%;
-    visibility: hidden;
 }
 
 /* CREAZIONE FRECCIA */
@@ -295,111 +294,4 @@ and open the template in the editor.
     width: 0%;
     border-radius: 10px;
     transition: width 400ms;
-}
-
-/* Fade in e OUT */
-
-.fade-in {
-  animation: fadeIn ease 1s;
-  -webkit-animation: fadeIn ease 1s;
-  -moz-animation: fadeIn ease 1s;
-  -o-animation: fadeIn ease 1s;
-  -ms-animation: fadeIn ease 1s;
-}
-@keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-    }
-}
-
-/* FadeOut */
-
-.fade-out {
-  animation: fadeOut ease 1s;
-  -webkit-animation: fadeOut ease 1s;
-  -moz-animation: fadeOut ease 1s;
-  -o-animation: fadeOut ease 1s;
-  -ms-animation: fadeOut ease 1s;
-}
-@keyframes fadeOut {
-  0% {
-    opacity:1;
-  }
-  100% {
-    opacity:0;
-  }
-}
-
-@-moz-keyframes fadeOut {
-  0% {
-    opacity:1;
-  }
-  100% {
-    opacity:0;
-  }
-}
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity:1;
-  }
-  100% {
-    opacity:0;
-  }
-}
-
-@-o-keyframes fadeOut {
-  0% {
-    opacity:1;
-  }
-  100% {
-    opacity:0;
-  }
-}
-
-@-ms-keyframes fadeOut {
-  0% {
-    opacity:1;
-  }
-  100% {
-    opacity:0;
 }
