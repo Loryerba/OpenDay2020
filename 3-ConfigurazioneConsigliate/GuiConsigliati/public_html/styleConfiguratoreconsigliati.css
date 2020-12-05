@@ -18,6 +18,7 @@ and open the template in the editor.
 }
 
 
+
 /*STILE DEL BOTTONE*/
 .button {
     display:inline-block;
@@ -61,10 +62,10 @@ and open the template in the editor.
     margin-left :24%;     
     float: left;     
     padding: 10px;     
-    border: 3px groove #990099;     
+    border: 3px groove #00ccc0;     
     width: 300px;     
     height: 300px;     
-    box-shadow: 5px 10px 18px #990099;
+    box-shadow: 5px 10px 18px #00ccc0;
 
 }
 
@@ -79,10 +80,10 @@ and open the template in the editor.
     margin-left :18%;     
     float: left;     
     padding: 10px;     
-    border: 3px groove #990099;     
+    border: 3px groove #00ccc0;     
     width: 300px;     
     height: 300px;     
-    box-shadow: 5px 10px 18px #990099;
+    box-shadow: 5px 10px 18px #00ccc0;
 
 }
 
@@ -176,7 +177,7 @@ and open the template in the editor.
 .divBox{
     width: 220px;
     padding: 5px;
-    box-shadow: 10px 10px 5px #888888;
+    box-shadow: 10px 10px 5px  #990099;
     margin:auto;
     text-align: center;
 }

@@ -25,7 +25,7 @@ function ShowBox() {
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
         var img = document.createElement("img");
-        img.src = "img/Case/Case1.jpg";
+        img.src = "img/Case/Case1.png";
         var src = document.getElementById('contenitore1');
 
         img.onclick = function () {
@@ -43,7 +43,7 @@ function ShowBox() {
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
         var img = document.createElement("img");
-        img.src = "img/Case/Case3.jpg";
+        img.src = "img/Case/Case3.png";
         var src = document.getElementById('contenitore3');
 
         img.onclick = function () {
@@ -61,7 +61,7 @@ function ShowBox() {
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
         var img = document.createElement("img");
-        img.src = "img/Case/Case12.jpg";
+        img.src = "img/Case/Case12.png";
         var src = document.getElementById('contenitore1');
 
         img.onclick = function () {
@@ -78,7 +78,7 @@ function ShowBox() {
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
         var img = document.createElement("img");
-        img.src = "img/Case/case13.jpg";
+        img.src = "img/Case/case13.png";
         var src = document.getElementById('contenitore3');
 
         img.onclick = function () {
@@ -93,7 +93,7 @@ function ShowBox() {
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
         var img = document.createElement("img");
-        img.src = "img/Case/Case2.jpg";
+        img.src = "img/Case/Case2.png";
         var src = document.getElementById('contenitore1');
 
         img.onclick = function () {
@@ -110,7 +110,7 @@ function ShowBox() {
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
         var img = document.createElement("img");
-        img.src = "img/Case/Case2.jpg";
+        img.src = "img/Case/Case2.png";
         var src = document.getElementById('contenitore3');
 
         img.onclick = function () {
@@ -126,7 +126,7 @@ function ShowBox() {
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
         var img = document.createElement("img");
-        img.src = "img/Case/Case13.jpg";
+        img.src = "img/Case/Case12.png";
         var src = document.getElementById('contenitore1');
 
         img.onclick = function () {
@@ -143,7 +143,7 @@ function ShowBox() {
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
         var img = document.createElement("img");
-        img.src = "img/Case/case12.jpg";
+        img.src = "img/Case/case13.png";
         var src = document.getElementById('contenitore3');
 
         img.onclick = function () {
@@ -158,7 +158,7 @@ function ShowBox() {
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
         var img = document.createElement("img");
-        img.src = "img/Case/Case4.jpg";
+        img.src = "img/Case/Case4.png";
         var src = document.getElementById('contenitore1');
 
         img.onclick = function () {
@@ -176,7 +176,7 @@ function ShowBox() {
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
         var img = document.createElement("img");
-        img.src = "img/Case/Case5.jpg";
+        img.src = "img/Case/Case5.png";
         var src = document.getElementById('contenitore3');
 
         img.onclick = function () {
@@ -192,7 +192,7 @@ function ShowBox() {
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
         var img = document.createElement("img");
-        img.src = "img/Case/Case7.jpg";
+        img.src = "img/Case/Case7.png";
         var src = document.getElementById('contenitore1');
 
         img.onclick = function () {
@@ -209,7 +209,7 @@ function ShowBox() {
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
         var img = document.createElement("img");
-        img.src = "img/Case/Case8.jpg";
+        img.src = "img/Case/Case8.png";
         var src = document.getElementById('contenitore3');
 
         img.onclick = function () {
@@ -225,7 +225,7 @@ function ShowBox() {
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
         var img = document.createElement("img");
-        img.src = "img/Case/Case5.jpg";
+        img.src = "img/Case/Case5.png";
         var src = document.getElementById('contenitore1');
 
         img.onclick = function () {
@@ -243,7 +243,7 @@ function ShowBox() {
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
         var img = document.createElement("img");
-        img.src = "img/Case/Case9.jpg";
+        img.src = "img/Case/Case9.png";
         var src = document.getElementById('contenitore3');
 
         img.onclick = function () {
@@ -259,7 +259,7 @@ function ShowBox() {
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
         var img = document.createElement("img");
-        img.src = "img/Case/Case9.jpg";
+        img.src = "img/Case/Case9.png";
         var src = document.getElementById('contenitore1');
 
         img.onclick = function () {
@@ -277,7 +277,7 @@ function ShowBox() {
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
         var img = document.createElement("img");
-        img.src = "img/Case/Case6.jpg";
+        img.src = "img/Case/Case10.png";
         var src = document.getElementById('contenitore3');
 
         img.onclick = function () {
@@ -285,73 +285,9 @@ function ShowBox() {
         };
         src.appendChild(img);
 
-    } else if (valore == 5 && valore1 == 1) {
-
-        //prendo l'elemento all'id contenitore
-        var visiblebox = document.getElementById('contenitore');
-        //rendo visibile le box
-        visiblebox.style.visibility = "visible";
-        var img = document.createElement("img");
-        img.src = "img/Case/Case11.jpg";
-        var src = document.getElementById('contenitore1');
-
-        img.onclick = function () {
-            window.location.href = 'Build1500-2000uff.html';
-        };
-        src.appendChild(img);
-        //--------------------------------------------------------------------
-
-
-
-        //----------------------------------------------------------------------
-
-        //prendo l'elemento all'id contenitore
-        var visiblebox = document.getElementById('contenitore');
-        //rendo visibile le box
-        visiblebox.style.visibility = "visible";
-        var img = document.createElement("img");
-        img.src = "img/Case/Case10.jpg";
-        var src = document.getElementById('contenitore3');
-
-        img.onclick = function () {
-            window.location.href = 'Build1500-2000uff3.html';
-        };
-        src.appendChild(img);
-
-
-    } else if (valore == 5 && valore1 == 2) {
-
-        //prendo l'elemento all'id contenitore
-        var visiblebox = document.getElementById('contenitore');
-        //rendo visibile le box
-        visiblebox.style.visibility = "visible";
-        var img = document.createElement("img");
-        img.src = "img/Case/Case6.jpg";
-        var src = document.getElementById('contenitore1');
-
-        img.onclick = function () {
-            window.location.href = 'Build1500-2000game.html';
-        };
-        src.appendChild(img);
-        //----------------------------------------------------------------------
-
-        //----------------------------------------------------------------------
-
-        //prendo l'elemento all'id contenitore
-        var visiblebox = document.getElementById('contenitore');
-        //rendo visibile le box
-        visiblebox.style.visibility = "visible";
-        var img = document.createElement("img");
-        img.src = "img/Case/Case10.jpg";
-        var src = document.getElementById('contenitore3');
-
-        img.onclick = function () {
-            window.location.href = 'Build1500-2000game3.html';
-        };
-        src.appendChild(img);
-
-
-
     }
+
+
 }
+
 
