@@ -19,72 +19,43 @@ function ShowBox() {
     if (valore == 0 || valore1 == 0) {
         alert("Devi selezionare perforza sia il budget che l'utilizzo");
     } else if (valore == 1 && valore1 == 1) {
-
+        
         //prendo l'elemento all'id contenitore
         var visiblebox = document.getElementById('contenitore');
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
-        var img = document.createElement("img");
-        img.src = "img/Case/Case1.png";
-        var src = document.getElementById('contenitore1');
-
-        img.onclick = function () {
+        
+        document.getElementById("im1").src = "img/Case/Case1.png";
+	
+	document.getElementById("im2").src = "img/Case/Case3.png";
+        
+        im1.onclick = function () {
             window.location.href = 'Build400-600uff.html';
         };
-        src.appendChild(img);
-
-        //--------------------------------------------------------------------
-
-
-        //----------------------------------------------------------------------
-
-        //prendo l'elemento all'id contenitore
-        var visiblebox = document.getElementById('contenitore');
-        //rendo visibile le box
-        visiblebox.style.visibility = "visible";
-        var img = document.createElement("img");
-        img.src = "img/Case/Case3.png";
-        var src = document.getElementById('contenitore3');
-
-        img.onclick = function () {
+        
+        im2.onclick = function () {
             window.location.href = 'Build400-600uff3.html';
         };
-        src.appendChild(img);
+
 
     } else if (valore == 1 && valore1 == 2) {
-
-
-
-
-        //prendo l'elemento all'id contenitore
+        
+       //prendo l'elemento all'id contenitore
         var visiblebox = document.getElementById('contenitore');
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
-        var img = document.createElement("img");
-        img.src = "img/Case/Case12.png";
-        var src = document.getElementById('contenitore1');
-
-        img.onclick = function () {
+        document.getElementById("im1").src = "img/Case/Case12.png";
+	
+	document.getElementById("im2").src = "img/Case/case13.png";
+        
+         im1.onclick = function () {
             window.location.href = 'Build400-600game.html';
         };
-        src.appendChild(img);
-        //--------------------------------------------------------------------
-
-
-        //----------------------------------------------------------------------
-
-        //prendo l'elemento all'id contenitore
-        var visiblebox = document.getElementById('contenitore');
-        //rendo visibile le box
-        visiblebox.style.visibility = "visible";
-        var img = document.createElement("img");
-        img.src = "img/Case/case13.png";
-        var src = document.getElementById('contenitore3');
-
-        img.onclick = function () {
+        
+        im2.onclick = function () {
             window.location.href = 'Build400-600game3.html';
         };
-        src.appendChild(img);
+
 
     } else if (valore == 2 && valore1 == 1) {
 
@@ -92,32 +63,20 @@ function ShowBox() {
         var visiblebox = document.getElementById('contenitore');
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
-        var img = document.createElement("img");
-        img.src = "img/Case/Case2.png";
-        var src = document.getElementById('contenitore1');
-
-        img.onclick = function () {
+        
+        document.getElementById("im1").src = "img/Case/Case2.png";
+	
+	document.getElementById("im2").src = "img/Case/Case2.png";
+        
+        im1.onclick = function () {
             window.location.href = 'Build600-800uff.html';
         };
-        src.appendChild(img);
-        //--------------------------------------------------------------------
-
-
-        //----------------------------------------------------------------------
-
-        //prendo l'elemento all'id contenitore
-        var visiblebox = document.getElementById('contenitore');
-        //rendo visibile le box
-        visiblebox.style.visibility = "visible";
-        var img = document.createElement("img");
-        img.src = "img/Case/Case2.png";
-        var src = document.getElementById('contenitore3');
-
-        img.onclick = function () {
+        
+         im2.onclick = function () {
             window.location.href = 'Build600-800uff3.html';
         };
-        src.appendChild(img);
-
+        
+      
 
     } else if (valore == 2 && valore1 == 2) {
 
@@ -125,31 +84,21 @@ function ShowBox() {
         var visiblebox = document.getElementById('contenitore');
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
-        var img = document.createElement("img");
-        img.src = "img/Case/Case12.png";
-        var src = document.getElementById('contenitore1');
+        
+        document.getElementById("im1").src = "img/Case/Case12.png";
+	
+	document.getElementById("im2").src = "img/Case/case13.png";
+        
 
-        img.onclick = function () {
+        im1.onclick = function () {
             window.location.href = 'Build600-800game.html';
         };
-        src.appendChild(img);
-        //--------------------------------------------------------------------
-
-
-        //----------------------------------------------------------------------
-
-        //prendo l'elemento all'id contenitore
-        var visiblebox = document.getElementById('contenitore');
-        //rendo visibile le box
-        visiblebox.style.visibility = "visible";
-        var img = document.createElement("img");
-        img.src = "img/Case/case13.png";
-        var src = document.getElementById('contenitore3');
-
-        img.onclick = function () {
+        
+         im2.onclick = function () {
             window.location.href = 'Build600-800game3.html';
         };
-        src.appendChild(img);
+       
+       
 
     } else if (valore == 3 && valore1 == 1) {
 
@@ -157,33 +106,20 @@ function ShowBox() {
         var visiblebox = document.getElementById('contenitore');
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
-        var img = document.createElement("img");
-        img.src = "img/Case/Case4.png";
-        var src = document.getElementById('contenitore1');
-
-        img.onclick = function () {
+        
+        document.getElementById("im1").src = "img/Case/Case4.png";
+	
+	document.getElementById("im2").src = "img/Case/Case5.png";
+        
+        im1.onclick = function () {
             window.location.href = 'Build800-1000uff.html';
         };
-        src.appendChild(img);
-        //--------------------------------------------------------------------
-
-
-
-        //----------------------------------------------------------------------
-
-        //prendo l'elemento all'id contenitore
-        var visiblebox = document.getElementById('contenitore');
-        //rendo visibile le box
-        visiblebox.style.visibility = "visible";
-        var img = document.createElement("img");
-        img.src = "img/Case/Case5.png";
-        var src = document.getElementById('contenitore3');
-
-        img.onclick = function () {
+        
+        im2.onclick = function () {
             window.location.href = 'Build800-1000uff3.html';
         };
-        src.appendChild(img);
-
+        
+        
 
     } else if (valore == 3 && valore1 == 2) {
 
@@ -191,66 +127,41 @@ function ShowBox() {
         var visiblebox = document.getElementById('contenitore');
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
-        var img = document.createElement("img");
-        img.src = "img/Case/Case7.png";
-        var src = document.getElementById('contenitore1');
+        
+        document.getElementById("im1").src = "img/Case/Case7.png";
+	
+	document.getElementById("im2").src = "img/Case/Case8.png";
+        
 
-        img.onclick = function () {
+        im1.onclick = function () {
             window.location.href = 'Build800-1000game.html';
         };
-        src.appendChild(img);
-        //--------------------------------------------------------------------
-
-
-        //----------------------------------------------------------------------
-
-        //prendo l'elemento all'id contenitore
-        var visiblebox = document.getElementById('contenitore');
-        //rendo visibile le box
-        visiblebox.style.visibility = "visible";
-        var img = document.createElement("img");
-        img.src = "img/Case/Case8.png";
-        var src = document.getElementById('contenitore3');
-
-        img.onclick = function () {
+        
+        im2.onclick = function () {
             window.location.href = 'Build800-1000game3.html';
         };
-        src.appendChild(img);
+        
 
 
     } else if (valore == 4 && valore1 == 1) {
 
-        //prendo l'elemento all'id contenitore
+       //prendo l'elemento all'id contenitore
         var visiblebox = document.getElementById('contenitore');
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
-        var img = document.createElement("img");
-        img.src = "img/Case/Case5.png";
-        var src = document.getElementById('contenitore1');
-
-        img.onclick = function () {
+        
+        document.getElementById("im1").src = "img/Case/Case5.png";
+	
+	document.getElementById("im2").src = "img/Case/Case9.png";
+        
+        im1.onclick = function () {
             window.location.href = 'Build1000-1500uff.html';
         };
-        src.appendChild(img);
-        //--------------------------------------------------------------------
-
-
-
-        //----------------------------------------------------------------------
-
-        //prendo l'elemento all'id contenitore
-        var visiblebox = document.getElementById('contenitore');
-        //rendo visibile le box
-        visiblebox.style.visibility = "visible";
-        var img = document.createElement("img");
-        img.src = "img/Case/Case9.png";
-        var src = document.getElementById('contenitore3');
-
-        img.onclick = function () {
+        
+        im2.onclick = function () {
             window.location.href = 'Build1000-1500uff3.html';
         };
-        src.appendChild(img);
-
+        
 
     } else if (valore == 4 && valore1 == 2) {
 
@@ -258,32 +169,19 @@ function ShowBox() {
         var visiblebox = document.getElementById('contenitore');
         //rendo visibile le box
         visiblebox.style.visibility = "visible";
-        var img = document.createElement("img");
-        img.src = "img/Case/Case9.png";
-        var src = document.getElementById('contenitore1');
+        
+        document.getElementById("im1").src = "img/Case/Case9.png";
+	
+	document.getElementById("im2").src = "img/Case/Case10.png";
+        
 
-        img.onclick = function () {
+        im1.onclick = function () {
             window.location.href = 'Build1000-1500game.html';
         };
-        src.appendChild(img);
-        //--------------------------------------------------------------------
-
-
-
-        //----------------------------------------------------------------------
-
-        //prendo l'elemento all'id contenitore
-        var visiblebox = document.getElementById('contenitore');
-        //rendo visibile le box
-        visiblebox.style.visibility = "visible";
-        var img = document.createElement("img");
-        img.src = "img/Case/Case10.png";
-        var src = document.getElementById('contenitore3');
-
-        img.onclick = function () {
+        
+        im2.onclick = function () {
             window.location.href = 'Build1000-1500game3.html';
         };
-        src.appendChild(img);
 
     }
 
