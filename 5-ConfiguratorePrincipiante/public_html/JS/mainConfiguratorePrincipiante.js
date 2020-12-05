@@ -15,7 +15,7 @@ function avanti() {
 
 
     var check = true;
-    
+
     // Controllo dell'input
 
     switch (contatore) {
@@ -157,7 +157,7 @@ function avanti() {
             break;
 
     }
-    
+
     // Se tutto a posto procedo con la function
 
     if (check) {
@@ -182,6 +182,8 @@ function avanti() {
             document.getElementById(form).hidden = true;
             // Nascondo la form della spiegazione corrente
             document.getElementById(form + "-1").hidden = true;
+            // Nascondo la form della gallery corrente
+            document.getElementById(form + "_M").hidden = true;
             // Incremento il contatore per sapere a che form mi trovo (Vado avanti)
             contatore++;
             // Compongo l'id della form aggiornato a quella successiva
@@ -190,6 +192,12 @@ function avanti() {
             document.getElementById(form).hidden = false;
             // Mostro la form della spiegazione corrente
             document.getElementById(form + "-1").hidden = false;
+
+            // Carico immagini nuove
+            caricaImmagini();
+
+            // Mostro la form della gallery corrente
+            document.getElementById(form + "_M").hidden = false;
 
             // Cambio il nome del bottone
             if (contatore == 10) {
@@ -210,17 +218,17 @@ function avanti() {
 
 
         } else {
-            
+
             // Quando premo conludi richiamo evaluateBuild che mi raccoglie tutte le componenti scelte
 
             evaluateBuild();
-            
+
             // Faccio un submit in modo da resettare tutte le form
-            
+
             document.getElementById("form10").submit();
-            
+
             // Aptro la pagina risultati
-            
+
             var win = window.open("risultatoFinale.html", '_blank');
             win.focus();
 
@@ -240,7 +248,7 @@ function indietro() {
 
     var bar = document.getElementById("bar");
     var txt = document.getElementById("text");
-    
+
     // Controllo se non sono sulla prima form
 
     if (contatore > 1) {
@@ -248,35 +256,43 @@ function indietro() {
         // Compongo l'id della form
 
         var form = "form" + (contatore).toString();
-        
+
         // Nascondo la form corrente
-        
+
         document.getElementById(form).hidden = true;
-        
+
         // Nascondo la form della spiegazione corrente
-        
+
         document.getElementById(form + "-1").hidden = true;
-        
+
+        // Nascondo la form della gallery corrente
+
+        document.getElementById(form + "_M").hidden = true;
+
         // Decremento il contatore per sapere a che form mi trovo (Vado indietro)
-        
+
         contatore--;
 
         // Compongo l'id della form aggiornato a quella precedente
 
         var form = "form" + (contatore).toString();
-        
+
         // Mostro la form corrente
-        
+
         document.getElementById(form).hidden = false;
-        
+
         // Mostro la form della spiegazione corrente
-        
+
         document.getElementById(form + "-1").hidden = false;
+
+        // Mostro la form della gallery corrente
+
+        document.getElementById(form + "_M").hidden = false;
 
         // Se sono alla pagina 1 nascondo il bottone indietro
 
         if (contatore == 1) {
-            
+
             // Nascondo il bottone indietro
 
             document.getElementById("bottoneIndietro").hidden = true;
@@ -307,19 +323,19 @@ function evaluateBuild() {
     var cpu = document.getElementById("lista1");
     cpu = cpu.options[cpu.selectedIndex].text;
     choice.push(cpu);
-    
+
     // Scelta mobo
 
     var mobo = document.getElementById("lista2");
     mobo = mobo.options[mobo.selectedIndex].text;
     choice.push(mobo);
-    
+
     // Scelta cooler
 
     var cooler = document.getElementById("lista3");
     cooler = cooler.options[cooler.selectedIndex].text;
     choice.push(cooler);
-    
+
     // Scelta ram
 
     var ram = document.getElementById("lista4");
@@ -331,49 +347,64 @@ function evaluateBuild() {
     var gpu = document.getElementById("lista5");
     gpu = gpu.options[gpu.selectedIndex].text;
     choice.push(gpu);
-    
+
     // Scelta hdd
 
     var hdd = document.getElementById("lista6");
     hdd = hdd.options[hdd.selectedIndex].text;
     choice.push(hdd);
-    
+
     // Scelta ssd
 
     var ssd = document.getElementById("lista7");
     ssd = ssd.options[ssd.selectedIndex].text;
     choice.push(ssd);
-    
+
     // Scelta psu
 
     var psu = document.getElementById("lista8");
     psu = psu.options[psu.selectedIndex].text;
     choice.push(psu);
-    
+
     // Scelta Case
 
     var Case = document.getElementById("lista9");
     Case = Case.options[Case.selectedIndex].text;
     choice.push(Case);
-    
+
     // Scelta fan
 
     var fan = document.getElementById("lista10");
     fan = fan.options[fan.selectedIndex].text;
     choice.push(fan);
-    
+
     // Inserisco il vettore come stringe nel sessionStorage in modo che possa recuperarlo nell'html dei risultati
-    
-    sessionStorage.setItem("choice",  JSON.stringify(choice));
+
+    sessionStorage.setItem("choice", JSON.stringify(choice));
 
 
 }
 
-// Script per la gallery
+// Carico le gallery successive
+
+function caricaImmagini(){
+
+    var stage = document.getElementById("stage" + contatore);
+    var fadeComplete = function (e) {
+        stage.appendChild(arr[0]);
+    };
+    var arr = stage.getElementsByTagName("a");
+    for (var i = 0; i < arr.length; i++) {
+        arr[i].addEventListener("animationend", fadeComplete, false);
+    }
+
+}
+
+// Script per la gallery 1
 
 window.addEventListener("DOMContentLoaded", function (e) {
 
-    var stage = document.getElementById("stage");
+    var stage = document.getElementById("stage1");
     var fadeComplete = function (e) {
         stage.appendChild(arr[0]);
     };

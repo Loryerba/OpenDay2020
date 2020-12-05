@@ -235,31 +235,301 @@ and open the template in the editor.
 
 /* GALLERY */
 
-#stage {
+#stage1 {
     margin: auto;
     width: 382px;
     height: 292px;
 }
 
-#stage a {
+#stage1 a {
     position: absolute;
 }
-#stage a img {
+#stage1 a img {
     padding: 10px;
     border: 1px solid #ccc;
     background: #fff;
 }
 
-#stage a:nth-of-type(1) {
+#stage1 a:nth-of-type(1) {
     animation-name: fader;
     animation-delay: 4s;
     animation-duration: 1s;
     z-index: 20;
 }
-#stage a:nth-of-type(2) {
+#stage1 a:nth-of-type(2) {
     z-index: 10;
 }
-#stage a:nth-of-type(n+3) {
+#stage1 a:nth-of-type(n+3) {
+    display: none;
+}
+
+/* GALLERY 2 */
+
+#stage2 {
+    margin: auto;
+    width: 382px;
+    height: 292px;
+}
+
+#stage2 a {
+    position: absolute;
+}
+#stage2 a img {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+#stage2 a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+}
+#stage2 a:nth-of-type(2) {
+    z-index: 10;
+}
+#stage2 a:nth-of-type(n+3) {
+    display: none;
+}
+
+/* GALLERY 3 */
+
+#stage3 {
+    margin: auto;
+    width: 382px;
+    height: 292px;
+}
+
+#stage3 a {
+    position: absolute;
+}
+#stage3 a img {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+#stage3 a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+}
+#stage3 a:nth-of-type(2) {
+    z-index: 10;
+}
+#stage3 a:nth-of-type(n+3) {
+    display: none;
+}
+
+/* GALLERY 4 */
+
+#stage4 {
+    margin: auto;
+    width: 382px;
+    height: 292px;
+}
+
+#stage4 a {
+    position: absolute;
+}
+#stage4 a img {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+#stage4 a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+}
+#stage4 a:nth-of-type(2) {
+    z-index: 10;
+}
+#stage4 a:nth-of-type(n+3) {
+    display: none;
+}
+
+/* GALLERY 5 */
+
+#stage5 {
+    margin: auto;
+    width: 382px;
+    height: 292px;
+}
+
+#stage5 a {
+    position: absolute;
+}
+#stage5 a img {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+#stage5 a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+}
+#stage5 a:nth-of-type(2) {
+    z-index: 10;
+}
+#stage5 a:nth-of-type(n+3) {
+    display: none;
+}
+
+/* GALLERY 6 */
+
+#stage6 {
+    margin: auto;
+    width: 382px;
+    height: 292px;
+}
+
+#stage6 a {
+    position: absolute;
+}
+#stage6 a img {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+#stage6 a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+}
+#stage6 a:nth-of-type(2) {
+    z-index: 10;
+}
+#stage6 a:nth-of-type(n+3) {
+    display: none;
+}
+
+/* GALLERY 7 */
+
+#stage7 {
+    margin: auto;
+    width: 382px;
+    height: 292px;
+}
+
+#stage7 a {
+    position: absolute;
+}
+#stage7 a img {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+#stage7 a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+}
+#stage7 a:nth-of-type(2) {
+    z-index: 10;
+}
+#stage7 a:nth-of-type(n+3) {
+    display: none;
+}
+
+/* GALLERY 8 */
+
+#stage8 {
+    margin: auto;
+    width: 382px;
+    height: 292px;
+}
+
+#stage8 a {
+    position: absolute;
+}
+#stage8 a img {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+#stage8 a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+}
+#stage8 a:nth-of-type(2) {
+    z-index: 10;
+}
+#stage8 a:nth-of-type(n+3) {
+    display: none;
+}
+
+/* GALLERY 9 */
+
+#stage9 {
+    margin: auto;
+    width: 382px;
+    height: 292px;
+}
+
+#stage9 a {
+    position: absolute;
+}
+#stage9 a img {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+#stage9 a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+}
+#stage9 a:nth-of-type(2) {
+    z-index: 10;
+}
+#stage9 a:nth-of-type(n+3) {
+    display: none;
+}
+
+/* GALLERY 10 */
+
+#stage10 {
+    margin: auto;
+    width: 382px;
+    height: 292px;
+}
+
+#stage10 a {
+    position: absolute;
+}
+#stage10 a img {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+#stage10 a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+}
+#stage10 a:nth-of-type(2) {
+    z-index: 10;
+}
+#stage10 a:nth-of-type(n+3) {
     display: none;
 }
 
