@@ -102,12 +102,12 @@ and open the template in the editor.
 
 
 .slider{
-    max-width: 300px;
+    max-width: 600px;
     border:10px solid  #990099;
     margin:80px auto;
     position: relative;
     overflow: hidden;
-    margin-top:-3%;
+    margin-top:1%;
 }
 
 .slider .left-slide,.slider .right-slide{
@@ -137,9 +137,11 @@ and open the template in the editor.
     right: -1px;
 }
 .slider .slider-items .item img{
-    max-width: 70%;
-    display: block;
+    max-width: 100%;
+    display:block;
     animation:zoom 1s ease;
+    position:relative;
+    left:25%;
 }
 
 @keyframes zoom{
@@ -153,7 +155,7 @@ and open the template in the editor.
 }
 .slider .slider-items .item .caption{
     position:relative;
-    width:70%;
+    width:100%;
     height: 60px;
     bottom: 0px;
     left: 0px;
