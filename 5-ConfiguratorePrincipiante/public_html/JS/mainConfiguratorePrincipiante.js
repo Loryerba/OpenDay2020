@@ -8,6 +8,16 @@
 
 var contatore = 1;
 var countPB = 0;
+var check1 = false;
+var check2 = false;
+var check3 = false;
+var check4 = false;
+var check5 = false;
+var check6 = false;
+var check7 = false;
+var check8 = false;
+var check9 = false;
+var check10 = false;
 
 
 
@@ -30,6 +40,75 @@ function avanti() {
                 alert("Seleziona un prodotto prima di procedere!");
 
             }
+
+            // CONTROLLO PROCESSORI AMD
+
+            if (list1.value >= 1 && list1.value <= 11) {
+
+                var list2 = document.getElementById("lista2");
+
+                for (var i = 11; i < 21; i++) {
+
+                    list2.options[i].style.display = 'none';
+
+                }
+
+            }
+
+            // CONTROLLO PROCESSORI INTEL < 10 GENERAZIONE
+
+            if (list1.value >= 12 && list1.value <= 20) {
+
+                var list2 = document.getElementById("lista2");
+
+                for (var i = 1; i < 11; i++) {
+
+                    list2.options[i].style.display = 'none';
+
+                }
+
+                for (var i = 17; i < 21; i++) {
+
+                    list2.options[i].style.display = 'none';
+
+                }
+
+            }
+
+            // CONTROLLO PROCESSORI INTEL DA 10 GENERAZIONE
+
+            if (list1.value >= 21 && list1.value <= 23) {
+
+                var list2 = document.getElementById("lista2");
+
+                for (var i = 1; i < 11; i++) {
+
+                    list2.options[i].style.display = 'none';
+
+                }
+
+            }
+
+            // CONTROLLO PROCESSORI INTEL DA 10 GENERAZIONE
+
+            if (list1.value >= 12 && list1.value <= 20) {
+
+                var list2 = document.getElementById("lista2");
+
+                for (var i = 1; i < 11; i++) {
+
+                    list2.options[i].style.display = 'none';
+
+                }
+
+                for (var i = 17; i < 21; i++) {
+
+                    list2.options[i].style.display = 'none';
+
+                }
+
+            }
+
 
             break;
 
@@ -289,6 +368,10 @@ function indietro() {
 
         document.getElementById(form + "_M").hidden = false;
 
+        // Resetto il controllo sulla lista
+
+        resetLista();
+
         // Se sono alla pagina 1 nascondo il bottone indietro
 
         if (contatore == 1) {
@@ -315,6 +398,11 @@ function evaluateBuild() {
 
     // Svuoto il session storage
     sessionStorage.clear();
+
+    // Resetto la lista
+
+    resetLista();
+
     // Vettore che conterrà le scelte
     var choice = [];
 
@@ -387,15 +475,100 @@ function evaluateBuild() {
 
 // Carico le gallery successive
 
-function caricaImmagini(){
+function caricaImmagini() {
 
-    var stage = document.getElementById("stage" + contatore);
-    var fadeComplete = function (e) {
-        stage.appendChild(arr[0]);
-    };
-    var arr = stage.getElementsByTagName("a");
-    for (var i = 0; i < arr.length; i++) {
-        arr[i].addEventListener("animationend", fadeComplete, false);
+    if (check1 == true && contatore == 1 || check2 == true && contatore == 2 || check3 == true && contatore == 3 ||check4 == true && contatore == 4 ||check5 == true && contatore == 5 ||check6 == true && contatore == 6 ||check7 == true && contatore == 7 ||check8 == true && contatore == 8 ||check9 == true && contatore == 9 ||check10 == true && contatore == 10) {
+
+
+
+    } else {
+
+        var stage = document.getElementById("stage" + contatore);
+        var fadeComplete = function (e) {
+            stage.appendChild(arr[0]);
+        };
+        var arr = stage.getElementsByTagName("a");
+        for (var i = 0; i < arr.length; i++) {
+            arr[i].addEventListener("animationend", fadeComplete, false);
+        }
+
+        switch (contatore) {
+
+            case 1:
+
+                check1 = true;
+
+                break;
+
+            case 2:
+                
+                check2 = true;
+
+                break;
+
+            case 3:
+                
+                check3 = true;
+
+                break;
+
+            case 4:
+                
+                check4 = true;
+
+                break;
+
+            case 5:
+                
+                check5 = true;
+
+                break;
+
+            case 6:
+                
+                check6 = true;
+
+                break;
+
+            case 7:
+                
+                check17 = true;
+
+                break;
+
+            case 8:
+                
+                check8 = true;
+
+                break;
+
+            case 9:
+                
+                check9 = true;
+
+                break;
+
+            case 10:
+                
+                check10 = true;
+
+                break;
+        }
+
+    }
+
+}
+
+// RESET
+
+function resetLista() {
+
+    var list2 = document.getElementById("lista2");
+
+    for (var i = 1; i < 21; i++) {
+
+        list2.options[i].style.display = 'block';
+
     }
 
 }
