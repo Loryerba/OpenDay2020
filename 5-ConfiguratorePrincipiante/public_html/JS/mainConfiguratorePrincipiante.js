@@ -468,7 +468,7 @@ function evaluateBuild() {
 
     // Inserisco il vettore come stringe nel sessionStorage in modo che possa recuperarlo nell'html dei risultati
 
-    sessionStorage.setItem("choice", JSON.stringify(choice));
+    sessionStorage.setItem("sceltePrec", JSON.stringify(choice));
 
 
 }
