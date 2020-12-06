@@ -4,8 +4,10 @@
  * and open the template in the editor.
  */
 
-function calcola() {
 
+
+function calcola() {
+    
     var scelte = JSON.parse(sessionStorage.getItem("sceltePrec"));
 
     var contenuto = document.getElementById("contenutoP");

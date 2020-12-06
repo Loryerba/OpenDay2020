@@ -52,3 +52,53 @@ and open the template in the editor.
     background: #9900cc;  
 }
 
+#bottoneScarica{
+    border-radius: 4px;
+    background-color: white;
+    border: 2px solid #990099;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 32px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 4px 2px;
+}
+
+#bottoneScarica span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#bottoneScarica span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#bottoneScarica:hover span {
+    padding-right: 25px;
+
+
+}
+
+#bottoneScarica:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#bottoneScarica:hover{
+
+    background-color: #990099;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+
+}

@@ -16,7 +16,10 @@ and open the template in the editor.
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script type="text/javascript" src='JS/mainFinale.js'></script>
+        <script src='JS/mainFinale.js'></script>
+        <script src='JS/creaTesto.js'></script>
+        <script src='JS/FileSaver.js'></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
     </head>
 
@@ -123,8 +126,8 @@ and open the template in the editor.
 
             <p id="contenutoP" style = "color: #FFFFFF;">
 
-               
-                
+
+
 
             </p>
 
@@ -132,6 +135,10 @@ and open the template in the editor.
         </div>
 
     <center> <p style="color:white; margin-top: 35px" id="prezzoFinale"> Costo totale : </p>
+
+        <br>
+
+        <center> <button id="bottoneScarica" onclick = "WriteToFile()"> <span id ="spanAvanti">Avanti</span> </button> </center>
 
         <script>
             calcola();
