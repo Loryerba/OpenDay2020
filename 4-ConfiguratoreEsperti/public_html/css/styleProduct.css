@@ -78,7 +78,7 @@ body{
     padding: 15px 32px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 40px 2px;
+    margin: 20px 2px;
     text-align:center;
 
 }
@@ -87,7 +87,7 @@ body{
     cursor: pointer;
     display: inline-block;
     position: relative;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .buttonPdf span:after {
@@ -100,7 +100,7 @@ body{
     opacity: 0;
     top: 0;
     right: -20px;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .buttonPdf:hover span {
