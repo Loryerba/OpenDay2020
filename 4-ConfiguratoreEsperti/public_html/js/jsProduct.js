@@ -85,20 +85,3 @@ function getChoice() {
 
 }
 
-function writeTxt() {
-
-    var choice = JSON.parse(sessionStorage.getItem("choice"));
-    var testo = "";
-
-    for (var i = 0; i < choice.length; i++) {
-
-        testo += choice[i] + "\n";
-
-    }
-
-    testo += "------ Made by HW Mania ------";
-
-    var blob = new Blob([testo], {type: "text/plain;charset=utf-8"});
-    saveAs(blob, "Configurazione.txt");
-
-}
